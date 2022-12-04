@@ -1,0 +1,3 @@
+/home/bassam/projects/cubic-stylization-implementation/_deps/libigl-subbuild/CMakeFiles/libigl-populate.dir
+/home/bassam/projects/cubic-stylization-implementation/_deps/libigl-subbuild/CMakeFiles/edit_cache.dir
+/home/bassam/projects/cubic-stylization-implementation/_deps/libigl-subbuild/CMakeFiles/rebuild_cache.dir
