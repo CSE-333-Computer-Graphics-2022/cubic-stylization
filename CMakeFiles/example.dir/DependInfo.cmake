@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bassam/projects/cubic-stylization-implementation/main.cpp" "CMakeFiles/example.dir/main.cpp.o" "gcc" "CMakeFiles/example.dir/main.cpp.o.d"
+  "/home/bassam/projects/cubic-stylization-implementation/stylization.cpp" "CMakeFiles/example.dir/stylization.cpp.o" "gcc" "CMakeFiles/example.dir/stylization.cpp.o.d"
   )
 
 # Targets to which this target links.

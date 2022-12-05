@@ -13,7 +13,8 @@ int main(int argc, char *argv[])
   if ( argc == 0 || argv[1]==NULL || strlen(argv[1]) == 0 ){
     cout << "no file path specified, defaulting to bunny" << "\n";
     arg = "meshes/bunny.obj";
-  }else{
+  }
+  else{
   arg= argv[1];
   } 
   

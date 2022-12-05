@@ -789,3 +789,7 @@ CMakeFiles/example.dir/main.cpp.o
  /home/bassam/projects/cubic-stylization-implementation/_deps/libigl-src/include/igl/unproject.cpp
  /home/bassam/projects/cubic-stylization-implementation/_deps/libigl-src/include/igl/unproject.h
 
+CMakeFiles/example.dir/stylization.cpp.o
+ /home/bassam/projects/cubic-stylization-implementation/stylization.cpp
+ /usr/include/stdc-predef.h
+

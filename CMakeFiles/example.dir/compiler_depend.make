@@ -788,6 +788,9 @@ CMakeFiles/example.dir/main.cpp.o: main.cpp \
   _deps/libigl-src/include/igl/unproject.cpp \
   _deps/libigl-src/include/igl/unproject.h
 
+CMakeFiles/example.dir/stylization.cpp.o: stylization.cpp \
+  /usr/include/stdc-predef.h
+
 
 _deps/libigl-src/include/igl/unproject.h:
 
@@ -1854,6 +1857,8 @@ _deps/eigen-src/Eigen/src/Core/products/SelfadjointMatrixVector.h:
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 _deps/eigen-src/Eigen/src/Geometry/AngleAxis.h:
+
+stylization.cpp:
 
 _deps/libigl-src/include/igl/massmatrix.h:
 

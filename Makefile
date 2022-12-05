@@ -263,6 +263,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+stylization.o: stylization.cpp.o
+.PHONY : stylization.o
+
+# target to build an object file
+stylization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/stylization.cpp.o
+.PHONY : stylization.cpp.o
+
+stylization.i: stylization.cpp.i
+.PHONY : stylization.i
+
+# target to preprocess a source file
+stylization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/stylization.cpp.i
+.PHONY : stylization.cpp.i
+
+stylization.s: stylization.cpp.s
+.PHONY : stylization.s
+
+# target to generate assembly for a file
+stylization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/stylization.cpp.s
+.PHONY : stylization.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -284,6 +308,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... stylization.o"
+	@echo "... stylization.i"
+	@echo "... stylization.s"
 .PHONY : help
 
 
