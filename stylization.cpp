@@ -4,4 +4,4 @@ class Stylization{
     public:
         void local_update();
         void global_update();
-}
+};
