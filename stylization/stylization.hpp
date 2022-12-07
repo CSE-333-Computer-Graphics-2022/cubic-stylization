@@ -14,7 +14,7 @@ using std::vector;
 
 
 class Stylization{
-    public:
+    private:
     Eigen::MatrixXd V;
     Eigen::MatrixXd V_desired;
     Eigen::MatrixXd V_area;
@@ -29,6 +29,7 @@ class Stylization{
     Eigen::MatrixXd u;
     Eigen::MatrixXd rho;
 
+    public:
     double lambda;
     Stylization(Eigen::MatrixXd& _V, Eigen::MatrixXi& _F);
 
