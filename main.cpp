@@ -1,7 +1,7 @@
 #include <igl/opengl/glfw/Viewer.h>
 #include <igl/readOBJ.h>
 #include <iostream>
-#include "stylization hpp"
+#include "stylization.hpp"
 using namespace std;
   
 
