@@ -25,8 +25,13 @@ int main(int argc, char *argv[])
 
   igl::readOBJ(arg, V, TC,CN,F,FTC,FN);
   Stylization style(V,F);
-  // style.init(V,F);
-  // Plot the mesh
+
+  for(int i=0;i<100;i++){
+    style.local_update();
+    cout<<"hello\n";
+    style.global_update();
+  }
+
   igl::opengl::glfw::Viewer viewer;
   viewer.data().set_mesh(V, F);
   viewer.data().set_face_based(true);
