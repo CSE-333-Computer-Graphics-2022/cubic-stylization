@@ -1,7 +1,10 @@
 #include <igl/opengl/glfw/Viewer.h>
 #include <igl/readOBJ.h>
 #include <iostream>
-#include "stylization.hpp"
+// #include <stylization.hpp>
+// #include "stylization.hpp"
+#include <stylization.hpp>
+
 using namespace std;
   
 
@@ -19,10 +22,10 @@ int main(int argc, char *argv[])
   arg= argv[1];
   } 
   
-  
+
   igl::readOBJ(arg, V, TC,CN,F,FTC,FN);
-  
-  
+  Stylization style(V,F);
+  // style.init(V,F);
   // Plot the mesh
   igl::opengl::glfw::Viewer viewer;
   viewer.data().set_mesh(V, F);
