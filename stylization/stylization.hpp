@@ -11,6 +11,7 @@
 #include <igl/adjacency_list.h>
 #include <igl/min_quad_with_fixed.h>
 #include <igl/vertex_triangle_adjacency.h>
+#include <igl/parallel_for.h>
 
 using std::vector;
 
@@ -18,7 +19,6 @@ using std::vector;
 class Stylization{
     private:
     Eigen::MatrixXd V;
-    Eigen::MatrixXd V_desired;
     Eigen::MatrixXd V_area;
     Eigen::MatrixXi F;
     Eigen::MatrixXd R_all;
@@ -27,7 +27,9 @@ class Stylization{
     vector< vector< int > > adjList;
     vector< vector< int > >triangle_adjacency;
     vector<Eigen::MatrixXd> R_all_vect;
-
+    vector<Eigen::MatrixXd> D;
+    vector<Eigen::MatrixXd> D_tilde;
+    vector<Eigen::MatrixXd> W;
     //Parameters required for admm
     Eigen::MatrixXd z;
     Eigen::MatrixXd u;
@@ -40,6 +42,7 @@ class Stylization{
 
     public:
     double lambda;
+    Eigen::MatrixXd V_desired;
     Stylization(Eigen::MatrixXd& _V, Eigen::MatrixXi& _F);
 
     void local_update();

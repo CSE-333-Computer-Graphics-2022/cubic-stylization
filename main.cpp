@@ -26,14 +26,17 @@ int main(int argc, char *argv[])
   igl::readOBJ(arg, V, TC,CN,F,FTC,FN);
   Stylization style(V,F);
 
-  for(int i=0;i<100;i++){
+
+
+  for(int i=0;i<5;i++){
+    cout<<i<<'\n';
     style.local_update();
-    cout<<"hello\n";
     style.global_update();
   }
 
-  igl::opengl::glfw::Viewer viewer;
-  viewer.data().set_mesh(V, F);
+    igl::opengl::glfw::Viewer viewer;
+  viewer.data().set_mesh(style.V_desired, F);
   viewer.data().set_face_based(true);
   viewer.launch();
+  
 }
