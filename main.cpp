@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
 
 
-  for(int i=0;i<5;i++){
+  for(int i=0;i<10;i++){
     cout<<i<<'\n';
     style.local_update();
     style.global_update();

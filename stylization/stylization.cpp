@@ -24,7 +24,7 @@ Stylization::Stylization(Eigen::MatrixXd& _V,Eigen::MatrixXi& _F) : V(_V), F(_F)
         R_all.col(i*3+2) = R_all_vect[i].col(2);
     }
 
-    lambda = 20.0;
+    lambda = 2.0;
     Eigen::VectorXi b;
     igl::min_quad_with_fixed_precompute(L, b, Eigen::SparseMatrix<double>(), false, solver_data);
 
@@ -75,9 +75,9 @@ void Stylization::local_update(){
 
 
         Eigen::MatrixXd Mconst = D[i] * W[i] * D_tilde[i].transpose();
-        std::cout<<"going in "<<i<<"\n";
+        // std::cout<<"going in "<<i<<"\n";
 
-        for(int ii=0;ii<50;ii++){
+        for(int ii=0;ii<1;ii++){
             Eigen::MatrixXd M = Mconst + rhoi*ni*(zi-ui).transpose();
 
             Eigen::JacobiSVD<Eigen::Matrix3d> svd;
@@ -129,14 +129,15 @@ void Stylization::local_update(){
         rho.coeffRef(1,i) = rhoi;
 
         R_all.block(0,i*3,3,3) = R;
-        for(int i=0;i<V.rows();i++){
+
+
+    }
+    ,1000);
+            for(int i=0;i<V.rows();i++){
             Eigen::Matrix3d R_temp;
             R_temp<<R_all.col(i*3), R_all.col(i*3+1), R_all.col(i*3+2);
             R_all_vect[i] = R_temp;
         }
-
-    }
-    ,1000);
 }
 
 
