@@ -17,9 +17,11 @@ In this repository, we provide a modified version of the algorithm, implemented 
 
 
 The algorithm is able to turn an input shape into the style of a cube while maintaining the content of the original shape. Texture and geometric features of the input shape are preserved in the stylized output.
+## Before
+<img src="https://user-images.githubusercontent.com/29100891/211583410-235e945a-db02-41c2-9544-98c2668ae2f5.png" width="450" height="400">
 
-![Uncubified](https://user-images.githubusercontent.com/29100891/211583410-235e945a-db02-41c2-9544-98c2668ae2f5.png | width=100)
-![Cubified](https://user-images.githubusercontent.com/29100891/211583423-be8958fd-17fe-4c80-85a1-80bfcccd126b.png | width=100)
+## After (40 iterations)
+<img src="https://user-images.githubusercontent.com/29100891/211583423-be8958fd-17fe-4c80-85a1-80bfcccd126b.png" width="450" height="400">
 
 # Licensing!
 
