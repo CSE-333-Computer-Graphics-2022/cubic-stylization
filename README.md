@@ -16,6 +16,8 @@ In this repository, we provide a modified version of the algorithm, implemented 
 # Results
 
 The algorithm is able to turn an input shape into the style of a cube while maintaining the content of the original shape. Texture and geometric features of the input shape are preserved in the stylized output.
+![Uncubified](example_images/rab_uncubed.png?raw=true "Uncubified")
+
 
 # Licensing
 
