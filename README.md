@@ -11,7 +11,8 @@ In this repository, we provide a modified version of the algorithm, implemented 
 1. Clone the repository to your local machine
 2. make a build folder.
 3. change directory to the build directory and run ` cmake ..`
-4. Execute the binary, followed by a path to an obj file that you want to cubify.
+4. Run ` make` in the build directory.
+5. Execute the binary, followed by a path to an obj file that you want to cubify.
 # Results
 
 The algorithm is able to turn an input shape into the style of a cube while maintaining the content of the original shape. Texture and geometric features of the input shape are preserved in the stylized output.
