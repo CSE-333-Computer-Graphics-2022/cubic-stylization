@@ -19,4 +19,4 @@ The algorithm is able to turn an input shape into the style of a cube while main
 
 # Licensing
 
-This code is released under the MIT license. However, the dataset used in the paper and provided in the example scripts are under the CC BY 4.0, CC0 1.0 and CC BY 2.0, CC BY-SA 3.0 license respectively, for the 3D assets from sketchfab.com, images of “The Kiss” by Constantin Brâncusi, and “Taichi” by Ju Ming. Be sure to comply with the terms of these licenses when using the code.
+This code is released under the MPL 2.0 License.
